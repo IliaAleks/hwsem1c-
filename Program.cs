@@ -30,15 +30,22 @@
 //  }
 //  Console.WriteLine($"Максимальное число равно {result}");
 
-// Task #3
-Console.WriteLine("Task 3");
-Console.WriteLine("Введите число: ");
+// // Task #3
+// Console.WriteLine("Task 3");
+// Console.WriteLine("Введите число: ");
+// int a=int.Parse(Console.ReadLine());
+// if (a%2==0) {
+//     Console.WriteLine($"Число {a} четное");
+//     } else {
+//         Console.WriteLine($"Число {a} нечетное");
+//     }
+
+// Task 4
+Console.WriteLine("Введите число для ряда нутуральных чисел: ");
 int a=int.Parse(Console.ReadLine());
-if (a%2==0) {
-    Console.WriteLine($"Число {a} четное");
-    } else {
-        Console.WriteLine($"Число {a} нечетное");
+Console.WriteLine($"Все четные числа от 1 до {a}");
+for (int i=1; i<a+1; i++) {
+    if (i%2==0) {
+        Console.Write($"{i}, ");
     }
-
-
-
+}
